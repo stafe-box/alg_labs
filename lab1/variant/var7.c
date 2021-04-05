@@ -10,8 +10,8 @@ int main(){
     scanf("%i", &a);
     printf("enter b: ");
     scanf("%i", &b);
-    printf("enter second par: ");
-    scanf("%i", &sc);
+    printf("enter second parameter: ");
+    scanf("%i", &sc);//второй параметр
 
     if (sc!=0)
     {
