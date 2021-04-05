@@ -5,16 +5,12 @@ int main()
     float a, b, c;
     printf("Enter a -> ");
     scanf("%f",&a);
-
     printf("Enter b -> ");
     scanf("%f",&b);
-
     printf("Enter c -> ");
     scanf("%f",&c);
-
     if (!a && !b && !c)//все не равны нулю
         return 0;
-
     float x = 1.0f;
     printf("f(x) = ");
     if (a)//а!=0
@@ -36,9 +32,7 @@ int main()
             printf("- ");}
         printf("%f", fabs(c));
     }*/
-    
     printf("\n");
-
     float f_x = a * x * x + b * x + c;
     float f_minus_x = a * x * x + b * -x + c;
     if (f_x == f_minus_x)
@@ -47,7 +41,6 @@ int main()
         printf("Function is odd: f(-x) = %f = -f(x) = %f\n", f_minus_x, -f_x);*/
     else
         printf ("Function is neither even nor odd: f(x) = %f != f(-x) = % f != -f(x) = %f\n" , f_x , f_minus_x , -f_x);
-
     if (a)
     {
         if (b)
