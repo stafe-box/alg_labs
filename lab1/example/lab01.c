@@ -9,11 +9,11 @@ int main()
     scanf("%f",&b);
     printf("Enter c -> ");
     scanf("%f",&c);
-    if (!a && !b && !c)//все не равны нулю
+    if (!a && !b && !c)
         return 0;
     float x = 1.0f;
     printf("f(x) = ");
-    if (a)//а!=0
+    if (a)
         printf("%f * x^2 ", a);
     if (b)
     {
