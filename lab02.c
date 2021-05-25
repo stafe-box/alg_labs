@@ -9,7 +9,7 @@ int main()
     if ((x > -0.769293) && (x < 1.0))
     {
         y = (x - 2.0) * sqrt ((1.0 + x) / (1.0 - x));
-        z = log10(pow(y, 2) - 1);
+        z = log10(y * y - 1);
         printf("y = %lf \nz = %lf \n", y, z);
     }
     else
