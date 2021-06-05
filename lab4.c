@@ -24,6 +24,9 @@ int main()
         I = h * I;
         n = n * 2;
         d = fabs(I - I2) / 3.0;
+        printf("Integral = %lf\n", I);
+        printf("n = %d\n", n);
+        printf("delta = %lf\n\n",d);
     }
     printf("Answer = %.5lf\n", I);
  }
