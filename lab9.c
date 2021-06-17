@@ -1,22 +1,24 @@
-#include <math.h>
 #include <stdio.h>
-#include <string.h>
 #include <stdlib.h>
-#include <ctype.h>
-int main(int argc, char* argv[])
+#include <string.h>
+
+int main()
 {
-    char str[100];
-    printf("Just write here>>>");
-    scanf("%[^\n]s", str);
-    char *p = str;
-    int sum = 0;
-    while (*p) {
-        while (*p && !isdigit(*p))
-            ++p;
-        sum += atoi(p);
-        while (*p && isdigit(*p))
-            ++p;
-    }
-    printf("Сумма чисел в строке = %d\n", sum);
-    return sum;
+    int k = 0;
+    int j = 0;
+    char text[1000];
+    printf("\n\nJust write here >>> ");
+    fgets(text, 1000, stdin);
+        char *pch = strtok(text, " ,;:");
+        while (pch != NULL)
+        {
+            if (atoi(pch))
+            {
+                k += atoi(pch);
+                j++;
+            }
+            pch = strtok(NULL, " ,;:");
+        }
+    printf("summ >>> %i\n\n\n", k);
+    return 0;
 }
